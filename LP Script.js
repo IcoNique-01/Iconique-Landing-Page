@@ -166,5 +166,5 @@ document.getElementById("loginForm").addEventListener("submit", (event)=>{
     event.preventDefault();
     const userName = document.getElementById("userName").value;
     localStorage.setItem("userName", userName);
-    window.location.href = "projectBody.html"
+    window.location.href = "Database.html"
 })
