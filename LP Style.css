@@ -1,0 +1,740 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --BGimg: url("Web%20background.png");
+    --fontColor: #0055ff;
+    --fontFade : rgba(0, 85, 255, 1);
+    --whIte: #fff;
+    --heroBut: #0f1e1f;
+    --divBTN: #787878;
+    --bodyColor: #1e1e2f;
+    --loginConBG: #f8c065;
+    --rem-ForgetLink: #00b0ff;
+    --navCol2: #fff;
+    --rem-ForgetLinkHover: #0055ff;
+    --loginButton: #0055ff;
+    --fontColor: #0055ff;
+    --textHov: #fff;
+    --loginHoverEffect: #003bb5;
+    --loginTxt: white;
+}
+body{
+    height: 200vh;
+}
+h1{
+    font-size: 26px;
+    color: var(--navCol2);
+    font-weight: 900;
+}
+a{
+    font-size: 16px;
+    font-weight: 900;
+    margin: auto 12px;
+    color: var(--fontColor);
+    text-decoration: none;
+    cursor: pointer;
+}
+h2{
+    color: var(--whIte);
+}
+p{
+    color: var(--whIte);
+}
+header{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    background-color: none;
+    z-index: 900;
+}
+header > div{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    min-height: 100%;
+}
+header > div > div{
+    display: flex;
+    align-items: center;
+}
+header > div > div > div{
+    overflow: hidden;
+    height: 60px;
+    margin-right: 20px;
+}
+
+header > div > div > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+header nav{
+    width: fit-content;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.dropbox{
+    position: relative;
+    display: inline-block;
+}
+.dropDownMenu{
+    position: absolute;
+    background:
+    rgba(255, 255, 255, 1);
+    top: 24px;
+    left: 0;
+    min-width: 130px;
+    display: none;
+    flex-direction: column;
+}
+.dropDownMenu li{
+    list-style: none;
+}
+.dropDownMenu li a{
+    display: block;
+    margin: 8px 0;
+    transition: all 0.2s ease-in-out;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.dropDownMenu li a:hover{
+    background: var(--fontFade);
+    color: #fff;
+}
+.dropbox:hover .dropDownMenu{
+    display: flex;
+}
+header nav button{
+    background: none;
+    border: none;
+    border-radius: 16px;
+    color: var(--navCol2);
+    font-weight: 600;
+    margin: auto 12px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+header nav button:hover{
+    background: var(--fontColor);
+    color: #fff;
+    border: 1.5px solid #fff;
+    box-shadow: -2px 2px 12px rgb(0, 0, 0, 0.2);
+}
+.signIn > div{
+    overflow: hidden;
+    width: 18px;
+    height: 18px;
+}
+.signIn > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.signIn button{
+    background: none;
+    border: none;
+    border-radius: 16px;
+    color: var(--navCol2);
+    font-weight: 600;
+    margin: auto 12px;
+    padding: 4px 12px;
+    transition: all 0.2s ease-in-out;
+}
+.signIn button:hover{
+    background: var(--fontColor);
+    color: #fff;
+    border: 1.5px solid #fff;
+    box-shadow: -2px 2px 12px rgb(0, 0, 0, 0.2);
+}
+main > div{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--BGimg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main > div > div{
+    display: grid;
+    align-items: start;
+    justify-content: start;
+    min-height: 100%;
+    position: relative;
+    grid-template-rows: 1fr 220px;
+    width: 80%;
+}
+main > div > div > div > h2{
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    text-align: left;
+}
+main > div > div > div > p{
+    margin-bottom: 0px;
+    line-height: 34px;
+    font-size: 20px;
+}
+.btnDiv{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.btnDiv p{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.btnDiv > div{
+    margin-right: 20px;
+}
+.btnDiv div:nth-child(2){
+    padding-left: 20px;
+    border-left: 2px solid #fff;
+}
+a{
+    margin: 0;
+    padding: 0;
+}
+.btnDiv button{
+    padding: 15px;
+    border: 2px solid #fff;
+    background-color: var(--heroBut);
+    border-radius: 25px;
+    color: var(--whIte);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btnDiv div:nth-child(2) button{
+    margin-right: 24px;
+}
+.btnDiv button:hover{
+    background-color: var(--whIte);
+    color: var(--heroBut);
+}
+.divBtn{
+    display: flex;
+    min-width: 98%;
+    min-height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    padding: 26px 16px;
+    border-radius: 20px;
+    background-color: var(--whIte);
+    box-shadow: 0px -6px 30px rgba(0, 0, 0, 0.35);
+}
+.divBtn > div{
+    position: relative;
+    background-color: #f1f5f8;
+    max-width: 100%;
+    min-height: 10px;
+    border-radius: 30px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+}
+.divBtn > div > div{
+    max-width: 14px;
+    max-height: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+.divBtn > div > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.divBtn > div > input{
+    color: var(--divBTN);
+    margin: 0px 15px;
+    min-width: 400px;
+    min-height: 40px;
+    padding: 0px 0pc 0 20px;
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+.divBtn > div > input::placeholder{
+    font-size: 13px;
+    color: var(--divBTN);
+}
+.divBtn > div > input:focus{
+    outline: none;
+}
+.divBtn div:nth-child(2){
+    margin-left: 65px;
+    min-width: 350px;
+    position: relative;
+}
+.divBtn div:nth-child(2) > div{
+    max-height: 30px;
+    max-width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+.divBtn div:nth-child(2) > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.divBtn div:nth-child(2) .pGraph{
+    display: flex;
+    min-width: fit-content;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.divBtn div:nth-child(2) p{
+    font-size: 8px;
+    text-align: start;
+    color: var(--divBTN);
+    margin-left: 14px;
+}
+.divBtn div:nth-child(2) input{
+    min-width: 270px;
+    height: 30%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--divBTN);
+    margin-bottom: 5px;
+}
+.divBtn div:nth-child(2) input:focus{
+    outline: none;
+}
+.divBtn div:nth-child(2) input::placeholder{
+    font-size: 19px;
+    color: var(--divBTN);
+}
+.divBtn button{
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: 8px 60px;
+    background: none;
+    margin-left: 65px;
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--whIte);
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+}
+.divBtn button:hover{
+    background-color: #880000;
+}
+.colPal{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: 50px;
+    bottom: 30px;
+    box-shadow: -5px 5px 12px rgba(0, 0, 0, 0.3);
+    background-color: #008000;
+    padding: 10px;
+    z-index: 50;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.colPal:hover{
+    background-color: #004900;
+}
+.colPal > div{
+    width: 34px;
+    height: 34px;
+}
+.colPal > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.logMet{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.fadeIn{
+    animation: fadeUp 0.8s ease forwards;
+}
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadeOut{
+    animation: fOut 0.4s ease-out;
+}
+@keyframes fOut{
+    from{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+.loginCont{
+    width: 400px;
+    display: grid;
+    grid-template-rows: 80px auto;
+    padding: 0px 40px 40px 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.loginCont > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginCont > div > span{
+    font-size: 40px;
+    cursor: pointer;
+}
+.imgHHH{
+    overflow: hidden;
+    display: flex;
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
+}
+.imgFF{
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+h2{
+ text-align: center;
+ font-size: 40px;
+ margin-bottom: 20px;
+ color: #fff;
+}
+p{
+    color: #fff;
+}
+label{
+    display: block;
+    margin: 15px 0 5px 0px;
+    color: #fff;
+}
+input[type="text"],input[type="password"]{
+    width: 100%;
+    height: 35px;
+    color: white;
+    border-radius: 4.5px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    padding: 4px 12px;
+    border-radius: 7px;
+}
+input::placeholder{
+    color: #fff;
+    opacity: 0.8;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+.rememberMe{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 7px 0 10px 0;
+}
+.rememberMe input{
+    margin-right: 5px;
+}
+.rememberMe a{
+    position: absolute;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--rem-ForgetLink);
+}
+.rememberMe a:hover{
+    color: var(--rem-ForgetLinkHover);
+    transition: 0.2s all ease-in-out;
+}
+.logss{
+    width: 100%;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    background-color: var(--loginButton);
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.logss:hover{
+    background-color: var(--loginHoverEffect);
+    color: var(--textHov);
+}
+.reSet{
+    width: 100%;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    background-color: var(--loginButton);
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.reSet:hover{
+    background-color: var(--loginHoverEffect);
+    color: var(--textHov);
+}
+.reG a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--rem-ForgetLink);
+}
+.reG a:hover{
+    color: var(--rem-ForgetLinkHover);
+    transition: 0.2s all ease-in-out;
+}
+.fogCont{
+    width: 400px;
+    display: none;
+    grid-template-rows: 80px auto;
+    padding: 0px 40px 40px 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+label{
+    display: block;
+    margin: 15px 0;
+}
+input[type="email"]{
+    width: 100%;
+    height: 35px;
+    color: white;
+    border-radius: 4.5px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    padding: 4px 12px;
+    border-radius: 7px;
+}
+input::placeholder{
+    color: #fff;
+    opacity: 0.5;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+#fLogBut{
+    margin-top: 20px;
+}
+/*Create Style*/
+.registerContainer {
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registerContainer > div > h2{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: #fff;
+    font-size: 14px;
+    margin: 8px 0 4px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    margin-bottom: 12px;
+}
+input:focus {
+    outline: none;
+    background: rgba(255,255,255,0.2);
+}
+.terms {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.terms a {
+    color: #00b0ff;
+    text-decoration: none;
+    margin-left: 4px;
+}
+.terms a:hover {
+    color: #0055ff;
+}
+.registerBtn {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0055ff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.registerBtn:hover {
+    background-color: #003bb5; /* darker blue on hover */
+}
+.loginLink {
+    text-align: center;
+    margin-top: 12px;
+    color: #fff;
+}
+.loginLink a {
+    color: #00b0ff;
+    text-decoration: none;
+}
+.loginLink a:hover {
+    color: #0055ff;
+}
+
+/*Media Querry*/
+@media(max-width: 960px){
+    header nav{
+        display: none;
+    }
+    main > div{
+        height: 80vh;
+    }
+    main > div > div{
+        width: 960px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main > div > div > div:nth-child(1){
+        margin-top: 0;
+    }
+    main > div > div > div > h2{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 60px;
+        text-align: left;
+    }
+    .btnDiv{
+        min-width: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .divBtn{
+        min-width: 90%;
+        min-height: 250px;
+        position: absolute;
+        left: 50px;
+        bottom: -190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .divBtn > div:nth-child(2){
+        max-width: 100%;
+        margin-left: 0px;
+        min-height: 50px;
+        padding: 0 15px;
+    }
+    .divBtn div:nth-child(2) input{
+        min-width: 400px;
+        min-height: 20px;
+        padding: 0px 0pc 0 12px;
+        background: none;
+        border: none;
+        font-size: 18px;
+        color: var(--divBTN);
+        margin-bottom: 0px;
+    }
+    .divBtn > div:nth-child(2) > div:nth-child(1){
+        margin-left: 20px;
+    }
+    .divBtn button{
+        margin-left: 0px;
+        padding: 14px 0;
+        font-size: 16px;
+    }
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+#preloader > img{
+    width: 100%;
+    height: 100%;
+}
+.content {
+  display: none;
+}

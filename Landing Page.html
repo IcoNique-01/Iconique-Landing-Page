@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LP Style.css">
+    <link rel="icon" href="Iconic Design Logo 2.png">
+    <script src="LP Script.js" defer></script>
+    <title>IcoNique | Jobs & Consulting</title>
+    <meta name="description" content="Discover jobs, hire top talent, and explore consulting with IcoNique—empowering businesses and job seekers to succeed together.">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <div>
+                    <img src="Iconic Design Logo 2.png">
+                </div>
+                <h1>IcoNique</h1>
+            </div>
+            <nav>
+                <div class="dropbox">
+                    <button>
+                        Find Jobs
+                    </button>
+                    <ul class="dropDownMenu">
+                        <li>
+                            <a href="#">By Category</a>
+                            <a href="#">By Location</a>
+                            <a href="#">Remote Jobs</a>
+                            <a href="#">Intership</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropbox">
+                    <button>
+                        Hire Talents
+                    </button>
+                    <ul class="dropDownMenu">
+                        <li>
+                            <a href="">Post a Job</a>
+                            <a href="">Browse Resources</a>
+                            <a href="">Recruitment Services</a>
+                            <a href="">Employer Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropbox">
+                    <button>
+                        Explore Consulting Solutions
+                    </button>
+                    <ul class="dropDownMenu">
+                        <li>
+                            <a href="">Business Strategy</a>
+                            <a href="">Technology Consulting</a>
+                            <a href="">HR & Talent Advisory</a>
+                            <a href="">Financial Consulting</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropbox">
+                    <button>
+                        Discover Insights
+                    </button>
+                    <ul class="dropDownMenu">
+                        <li>
+                            <a href="">Industry Reports</a>
+                            <a href="">Career Advice</a>
+                            <a href="">Market Trends</a>
+                            <a href="">Success Sories</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="signIn">
+                <div>
+                    <img src="Search Button.png">
+                </div>
+                <button id="signBut">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="preloader">
+        <img src="spiral-css-preloader.gif">
+    </div>
+    <main>
+        <div>
+            <div>
+                <div>
+                    <h2>Anything’s possible when<br>you have the talent</h2>
+                    <p>Find skilled candidates, in-demand jobs abd the solution you need to<br>help you do your best work yet.</p>
+                </div>
+                <div class="btnDiv">
+                    <div>
+                        <p>FOR JOB SEEKERS</p>
+                        <a href="projectLog.html">
+                            <button>
+                                Find your next job
+                            </button>
+                        </a>
+                    </div>
+                    <div>
+                        <p>FOR BUSINESS</p>
+                        <a href="projectLog.html">
+                            <button>
+                                Find your next hire here
+                            </button>
+                        </a>
+                        <a href="projectLog.html">
+                            <button>
+                                Explore consulting solutions
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="divBtn">
+                    <div>
+                        <div>
+                            <img src="Search Button 2.png">
+                        </div>
+                        <input type="text" placeholder="Job Title, Skills, or Keywords">
+                    </div>
+                    <div>
+                        <div>
+                            <img src="Location.png">
+                        </div>
+                        <div class="pGraph">
+                            <p>City, State, or Zip Code</p>
+                            <input type="text" placeholder="Cincinnati">
+                        </div>
+                    </div>
+                    <button>
+                        Search Jobs
+                    </button>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <div class="colPal">
+        <div>
+            <img src="ColorPal.png">
+        </div>
+    </div>
+
+    <!--Login Form-->
+    <div class="logMet">
+        <div class="loginCont">
+            <div>
+                <span id="closeR" style="color: white;">&times;</span>
+                <div class="imgHHH">
+                    <img src="Iconic Design Logo 2.png" class="imgFF">
+                </div>
+            </div>
+
+            <form id="loginForm">
+                <h2>Sign In</h2>
+
+                <label for="">Username</label>
+                <input type="text" name="email" id="userName" placeholder="Username" required>
+
+                <label for="">Password</label>
+                <input type="password" name="password" placeholder="Input Password" minlength="4" required>
+
+                <div class="rememberMe">
+                    <label for="remember">
+                        <input type="checkbox">Remember Me
+                        <a href="project forgot.html" id="forGot">Forgot Password</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="logss" id="loGs">Login</button>
+
+                <input type="reset" class="reSet">
+
+                <div class="reG" style="color: white;">
+                    Don't have an account <a id="reG">Register</a>
+                </div>
+            </form>
+        </div>
+
+    <!--Forgot Password Form-->
+        <div class="fogCont">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <span id="closeForgot" style="color: white; font-size: 40px; cursor: pointer;">&times;</span>
+                <div class="imgHHH">
+                    <img src="Iconic Design Logo 2.png" class="imgFF">
+                </div>
+            </div>
+
+            <form>
+                <h2>Forgot Password</h2>
+                <label for="">Email</label>
+                <input type="email" name="email" placeholder="Input Your Email" required>
+
+                <button type="submit" class="logss" id="fLogBut">Login</button>
+            </form>
+        </div>
+
+    <!--Create Account Form-->
+        <div class="registerContainer" id="createCon">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <span id="closeCrt" style="color: white; font-size: 40px; cursor: pointer;">&times;</span>
+                <h2>Create Account</h2>
+                <div class="imgHHH">
+                    <img src="Iconic Design Logo 2.png" class="imgFF">
+                </div>
+            </div>
+            <form>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="John" required>
+
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" placeholder="Doe" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="john_doe" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="********" required>
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="********" required>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+
+                <button type="submit" class="registerBtn" id="regBut">Register</button>
+
+                <p class="loginLink">Already have an account? <a id="logBack">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
